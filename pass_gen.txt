@@ -20,6 +20,7 @@ class PassGen(QWidget):
         self.length_input.setAlignment(Qt.AlignRight)
         self.length_input.setFixedWidth(50)
         self.button.clicked.connect(self.generator)
+        self.length_input.returnPressed.connect(self.generator)
         self.copy_button.clicked.connect(self.copy_password)
         self.copy_box.setReadOnly(True)
         self.pass_label.setAlignment(Qt.AlignCenter)
